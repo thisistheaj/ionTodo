@@ -1,7 +1,7 @@
 <ion-view view-title="Todo List">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="todo in todos" href="#/app/todos/{{todo.id}}">
+      <ion-item ng-repeat="todo in vc.todos" href="#/app/todos/{{todo.id}}">
         {{todo.title}}
       </ion-item>
     </ion-list>

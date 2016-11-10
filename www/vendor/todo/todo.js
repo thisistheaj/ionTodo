@@ -1,4 +1,5 @@
 angular.module('ionTodos.TodoController')
+  .controller('TodoController', TodoController);
 
-  .controller('TodoController', function($scope, $stateParams) {
-  });
+function TodoController($scope, $stateParams) {
+}

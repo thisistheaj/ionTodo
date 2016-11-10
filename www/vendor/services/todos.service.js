@@ -3,7 +3,9 @@ angular.module('ionTodos.TodosService', [])
 
 function TodosService() {
   var service = {
-    getTodos:getTodos
+    getTodos:getTodos,
+    addTodo:addTodo,
+    removeTodo:removeTodo,
   };
 
   var todos = [
@@ -14,6 +16,7 @@ function TodosService() {
   ];
 
   function getTodos() {
+    loadTodos();
     return todos;
   }
 
@@ -35,10 +38,12 @@ function TodosService() {
 
   function addTodo(todo) {
     todos.append(todo)
+    saveTodos();
   }
 
   function removeTodo(index) {
     todos.splice(index,1);
+    saveTodos();
   }
 
   return service;

@@ -1,6 +1,6 @@
-angular.module('ionTodos.playlists')
-  .controller('PlaylistsCtrl', function($scope) {
-    $scope.playlists = [
+angular.module('ionTodos.TodoListController')
+  .controller('TodoListController', function($scope) {
+    $scope.todos = [
       { title: 'Reggae', id: 1 },
       { title: 'Chill', id: 2 },
       { title: 'Dubstep', id: 3 },

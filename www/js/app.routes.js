@@ -10,25 +10,25 @@ angular.module('ionTodos')
       })
 
 
-      .state('app.playlists', {
-        url: '/playlists',
+      .state('app.todos', {
+        url: '/todos',
         views: {
           'menuContent': {
-            templateUrl: 'vendor/playlists/playlists.html',
-            controller: 'PlaylistsCtrl'
+            templateUrl: 'vendor/todos/todos.html',
+            controller: 'TodoListController'
           }
         }
       })
 
-      .state('app.single', {
-        url: '/playlists/:playlistId',
+      .state('app.todo', {
+        url: '/todos/:playlistId',
         views: {
           'menuContent': {
-            templateUrl: 'vendor/playlist/playlist.html',
-            controller: 'PlaylistCtrl'
+            templateUrl: 'vendor/todo/todo.html',
+            controller: 'TodoController'
           }
         }
       });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/playlists');
+    $urlRouterProvider.otherwise('/app/todos');
   });

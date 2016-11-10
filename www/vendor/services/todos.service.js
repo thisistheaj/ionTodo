@@ -37,7 +37,7 @@ function TodosService() {
   }
 
   function addTodo(todo) {
-    todos.append(todo)
+    todos.push(todo)
     saveTodos();
   }
 

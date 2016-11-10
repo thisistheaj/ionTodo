@@ -1,7 +1,11 @@
 <ion-view view-title="Todo List">
-  <ion-content>
+  <ion-nav-buttons side="right">
+    <button class="button button-clear" ng-click="vc.addTodo()">
+      <i class="icon-right icon ion-android-add positive"></i>
+    </button>
+  </ion-nav-buttons> <ion-content>
     <ion-list>
-      <ion-item class="padding" ng-repeat="todo in vc.todos" href="#/app/todos/{{todo.title}}">
+      <ion-item ng-repeat="todo in vc.todos" href="#/app/todos/{{todo.title}}">
         {{todo.title}}
       </ion-item>
     </ion-list>

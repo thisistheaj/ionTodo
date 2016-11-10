@@ -21,11 +21,12 @@ function route($stateProvider, $urlRouterProvider) {
     })
 
     .state('app.todo', {
-      url: '/todos/:playlistId',
+      url: '/todos/:title',
       views: {
         'menuContent': {
           templateUrl: 'vendor/todo/todo.html',
-          controller: 'TodoController'
+          controller: 'TodoController',
+          controllerAs:'vc'
         }
       }
     });

@@ -25,7 +25,7 @@ function TodosService() {
   }
 
   function loadTodos() {
-    todos = localStorage.getItem('todos');
+    localStorage.getItem('todos');
   }
 
   function pullTodos() {

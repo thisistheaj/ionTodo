@@ -7,6 +7,9 @@
     <ion-list>
       <ion-item ng-repeat="todo in vc.todos" href="#/app/todos/{{todo.title}}">
         {{todo.title}}
+        <ion-option-button class="button-assertive" ng-click="vc.removeTodo(todo)">
+          <i class="icon ion-minus-circled"></i>
+        </ion-option-button>
       </ion-item>
     </ion-list>
   </ion-content>

@@ -17,5 +17,21 @@ function TodosService() {
     return todos;
   }
 
+  function saveTodos() {
+    localStorage.setItem('todos',todos);
+  }
+
+  function loadTodos() {
+    todos = localStorage.getItem('todos');
+  }
+
+  function pullTodos() {
+    //todo: http GET request
+  }
+
+  function pushTodos() {
+    //todo: http POST request
+  }
+
   return service;
 }

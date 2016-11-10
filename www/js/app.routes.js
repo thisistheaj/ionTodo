@@ -7,7 +7,6 @@ angular.module('ionTodos')
         url: '/app',
         abstract: true,
         templateUrl: 'vendor/menu.html',
-        controller: 'AppCtrl'
       })
 
 

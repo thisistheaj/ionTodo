@@ -1,5 +1,5 @@
 angular.module('ionTodos', [
   'ionic',
-  'ionTodos.controllers',
-  'ionTodos.playlists'
+  'ionTodos.playlists',
+  'ionTodos.playlist'
 ]);

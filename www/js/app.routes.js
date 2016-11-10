@@ -1,4 +1,4 @@
-angular.module('starter')
+angular.module('ionTodos')
 
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider

@@ -6,7 +6,7 @@ angular.module('starter')
       .state('app', {
         url: '/app',
         abstract: true,
-        templateUrl: 'templates/menu.html',
+        templateUrl: 'vendor/menu.html',
         controller: 'AppCtrl'
       })
 
@@ -15,7 +15,7 @@ angular.module('starter')
         url: '/playlists',
         views: {
           'menuContent': {
-            templateUrl: 'templates/playlists.html',
+            templateUrl: 'vendor/playlists/playlists.html',
             controller: 'PlaylistsCtrl'
           }
         }
@@ -25,7 +25,7 @@ angular.module('starter')
         url: '/playlists/:playlistId',
         views: {
           'menuContent': {
-            templateUrl: 'templates/playlist.html',
+            templateUrl: 'vendor/playlist/playlist.html',
             controller: 'PlaylistCtrl'
           }
         }

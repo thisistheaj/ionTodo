@@ -33,5 +33,13 @@ function TodosService() {
     //todo: http POST request
   }
 
+  function addTodo(todo) {
+    todos.append(todo)
+  }
+
+  function removeTodo(index) {
+    todos.splice(index,1);
+  }
+
   return service;
 }
